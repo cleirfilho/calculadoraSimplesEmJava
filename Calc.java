@@ -3,8 +3,9 @@ import java.util.Scanner;
 // classe para efetuar os calculos 
 public class Calc { 
   static public void main(String[] args){
-  
-  try (Scanner scan = new Scanner(System.in)) {
+
+  Scanner scan = new Scanner(System.in);
+ 
     // inicializa a classe numero.
     Numero resultado = new Numero();
     // inicializa a classe de operaçoes
@@ -39,11 +40,12 @@ public class Calc {
         continuarOperacoa = 0;
         break;
       }
-      System.out.printf("%n O resuldado da operação selecionada é %f",resultado.getValor());
-      System.out.printf("%nDigite 0 se deseja para com a operação:");
+      System.out.printf("%n%n O resuldado da operação selecionada é %f",resultado.getValor());
+      System.out.printf("%n%nDigite 0 se deseja para com a operação ou 1 se deseja fazer uma nova operação:");
       continuarOperacoa = scan.nextInt();
       System.out.printf("%n%n%n");
     }
-  }
+    scan.close();
+
 }
 }
