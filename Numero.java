@@ -14,9 +14,5 @@ public class Numero {
 // metodos para recuperar o valor
   public float getValor() {
     return this.valor;
-  }
-
-  
-
-  
+  }  
 }

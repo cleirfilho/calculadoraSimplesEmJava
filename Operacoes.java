@@ -64,9 +64,11 @@ public class Operacoes {
       try { 
         return scan.nextFloat();
       } catch (InputMismatchException err) {
-          System.out.printf("%n O número que você digitou é invalido! por favor utilize o ' . '(ponto) para separação de casas decimais.");
+          System.out.printf("%n O número que você digitou é invalido! por favor utilize o ' . '(ponto) para separação de casas decimais.%n1");
+          System.exit(0);
+          return 0;
       }
-      return 0;
+     
   }
 
 }

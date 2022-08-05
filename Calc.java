@@ -1,4 +1,7 @@
+// Aluno: cleir de castro e costa filho 
+// RA: 21031801-5
 import java.util.Scanner;
+
 
 // classe para efetuar os calculos 
 public class Calc { 
@@ -17,6 +20,7 @@ public class Calc {
     int continuarOperacoa = 1;
 
     while(continuarOperacoa != 0){
+      System.out.printf("%n----------Calculadora----------%n%n%n");
       System.out.printf("%nIndique qual opereção você deseja realizar:");
       System.out.printf("%n 1-Somar %n 2-Subtrair %n 3-Divisão %n 4-Multiplicação %n 5-Quadrado de um numero %n 0- Sair da Aplicação:");
       qualOperacao = scan.nextInt();
